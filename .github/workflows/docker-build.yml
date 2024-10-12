@@ -32,7 +32,7 @@ jobs:
         images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
         tags: |
           type=raw,value=latest
-          type=raw,values=24.04
+          type=raw,value=24.04
           ${{ github.sha }}
 
     - name: Build and push Docker image
